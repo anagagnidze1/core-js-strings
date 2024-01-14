@@ -482,11 +482,8 @@ function extractEmails(str) {
  *    => 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
  *
  */
-function encodeToRot13(str) {
-  return str.replace(/[a-zA-Z]/g, function (char) {
-    const offset = char.toLowerCase() < 'n' ? 13 : -13;
-    return String.fromCharCode(char.charCodeAt(0) + offset);
-  });
+function encodeToRot13(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
